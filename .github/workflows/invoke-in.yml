@@ -1,14 +1,1 @@
-name: Invoke IN
 
-on:
-  schedule:
-    # Este cron se ejecutará todos los días a las 00:35 AM (horario UTC-4)
-    - cron: '47 4 * * *' # Esto es UTC
-
-jobs:
-  invoke-webhook:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Invoke URL
-        run: |
-          curl -X GET "https://webhook.site/69b35f2c-5a1f-4c70-9bdc-009ef9220268"
