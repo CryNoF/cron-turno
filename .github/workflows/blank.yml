@@ -1,14 +1,1 @@
-name: Invoke URL
 
-on:
-  schedule:
-    # Este cron se ejecutará de lunes a viernes a las 12:18 AM (horario de Chile)
-    - cron: '18 3 * * 1-5' # UTC-0. Ajusta según sea necesario para tu horario.
-
-jobs:
-  invoke-url:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Invoke URL
-        run: |
-          curl -X GET "http://httpbin.org/get"
