@@ -2,8 +2,8 @@ name: Invoke URL
 
 on:
   schedule:
-    # Este cron se ejecutará de lunes a viernes a las 12:18 AM (horario de Chile)
-    - cron: '18 3 * * 1-5' # UTC-0. Ajusta según sea necesario para tu horario.
+    # Este cron se ejecutará de lunes a viernes a las 12:24 AM (horario de Chile)
+    - cron: '24 3 * * 1-5' # UTC-0. Ajusta según sea necesario para tu horario.
 
 jobs:
   invoke-url:
