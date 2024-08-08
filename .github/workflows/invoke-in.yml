@@ -1,9 +1,9 @@
-name: Invoke Webhook
+name: Invoke IN
 
 on:
   schedule:
     # Este cron se ejecutará todos los días a las 00:35 AM (horario UTC-4)
-    - cron: '35 4 * * *' # Esto es UTC
+    - cron: '50 4 * * *' # Esto es UTC
 
 jobs:
   invoke-webhook:
